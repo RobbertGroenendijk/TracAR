@@ -1,0 +1,4 @@
+ofxBranchesPrimitive
+ofxGui
+ofxOsc
+ofxSyphon
