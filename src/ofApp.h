@@ -37,11 +37,6 @@ class ofApp : public ofBaseApp{
         void constructPolyline(float _xPos, float _yPos, float _zPos);
         void constructBranch();
     
-        // Branching calculations
-        glm::quat calculateEndOrientation(glm::vec3 startDirection, glm::vec3 endDirection);
-        glm::vec3 calculateEndDirection(glm::vec4 startPos, glm::vec4 endPos);
-        glm::quat rotationBetweenVectors(glm::vec3 start, glm::vec3 dest);
-    
     // OSC
     ofxOscReceiver OSCreceiver;
     
@@ -73,4 +68,7 @@ class ofApp : public ofBaseApp{
     int newIndex;
     int lastBranchIndex;
     int newBranchIndex;
+    
+    // Tube
+    ofxBranchesPrimitive tube;
 };
